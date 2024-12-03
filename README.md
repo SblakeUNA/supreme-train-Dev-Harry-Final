@@ -1,1 +1,2 @@
 # supreme-train-Dev-Harry-Final
+# Big Daddy's Pizza Builder is an interactive web application that allows users to customize their ideal pizza by selecting size, toppings, cheese preferences, and cutting options. The site features a collapsible navigation bar, a preloaded favorite order option, and a detailed order summary display. Designed with responsiveness in mind, the website ensures a smooth user experience on both desktop and mobile devices.
