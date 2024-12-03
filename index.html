@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Big Daddy's Pizza Builder</title>
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="styles/style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.14.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"></script>
+
+
+    <script defer src="scripts/script.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <button class="navbar-toggler" id="toggle-navbar" aria-label="Toggle navigation">☰</button>
+            <div class="navbar-menu hidden" id="navbar-menu" aria-hidden="true">
+                <a href="#builder" class="nav-link">Pizza Builder</a>
+                <a href="#about" class="nav-link">Nu Validator</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="builder" class="container">
+            <h1>Big Daddy's Pizza Builder</h1>
+            <form id="pizza-builder">
+                <div>
+                    <label for="size">Pizza Size:</label>
+                    <select id="size" name="size">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                </div>
+                <fieldset>
+                    <legend>Toppings:</legend>
+                    <div>
+                        <input type="checkbox" id="topping-pepperoni" name="toppings" value="pepperoni">
+                        <label for="topping-pepperoni">Pepperoni</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="topping-mushrooms" name="toppings" value="mushrooms">
+                        <label for="topping-mushrooms">Mushrooms</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="topping-bacon" name="toppings" value="bacon">
+                        <label for="topping-bacon">Bacon</label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Extra Cheese:</legend>
+                    <div>
+                        <input type="radio" id="cheese-yes" name="cheese" value="yes">
+                        <label for="cheese-yes">Yes</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="cheese-no" name="cheese" value="no">
+                        <label for="cheese-no">No</label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Cut Pizza:</legend>
+                    <div>
+                        <input type="radio" id="cut-half" name="cut" value="half">
+                        <label for="cut-half">Cut in Half</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="cut-whole" name="cut" value="whole">
+                        <label for="cut-whole">Whole</label>
+                    </div>
+                </fieldset>
+                <label for="notes">Special Instructions:</label>
+                <textarea id="notes" name="notes"></textarea>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="123-456-7890">
+
+                <button type="button" id="load-favorite">Load Favorite Order</button>
+                <button type="submit">Submit Order</button>
+            </form>
+            <div id="message" class="hidden"></div>
+        </section>
+    </main>
+</body>
+</html>
